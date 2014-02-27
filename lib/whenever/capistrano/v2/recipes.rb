@@ -38,7 +38,7 @@ Capistrano::Configuration.instance(:must_exist).load do
         args = {
           :command => fetch(:whenever_command),
           :flags   => fetch(:whenever_clear_flags),
-          :path    => fetch(:latest_release)
+          :path    => fetch(:current_release)
         }
 
         whenever_run_commands(args)
